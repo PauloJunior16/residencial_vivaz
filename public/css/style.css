@@ -7,9 +7,19 @@ nav h1 {
     margin-top: 10px;
 }
 
+.jumbotron {
+    text-align: center;
+}
+
 .products {
     text-align: center;
     color: #960064;
+}
+
+#carouselIndicators {
+    margin-left: 12%;
+    width: 75%;
+    height: auto;
 }
 
 .navbar ul {
@@ -21,6 +31,25 @@ nav h1 {
 #navbarContent {
     border: solid gray 2px;
     border-radius: 5px;
+}
+
+
+.rounded-circle {
+    border: solid 15px #00f7a5;
+    background-color: #ffffff;
+}
+
+.beneficts > li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url('/img/coracao_vivaz.jpg');
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    background-position: center center;
+    vertical-align: middle;
 }
 
 .nav-link img {
@@ -84,6 +113,48 @@ nav h1 {
     background-color: #777777;
 }
 
+
+/* Social media buttons */
+.sticky-container {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: -150px; /* Adjusted for 50x50 px icons */
+    top: 130px;
+    width: 250px; /* Adjusted for 50x50 px icons */
+}
+
+.sticky li {
+    list-style-type: none;
+    color: #000;
+    height: 53px; /* Adjusted for 50x50 px icons */
+    padding: 0;
+    margin: 0 0 1px 0;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.sticky li:hover {
+    margin-left: -165px; /* Adjusted for 50x50 px icons */
+}
+
+.sticky li img {
+    float: left;
+    margin: 2px 5px; /* Adjusted for 50x50 px icons */
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.sticky li p {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 53px; /* Adjusted for 50x50 px icons */
+}
+
+
+/* Mobile  Config*/
 @media (max-width: 1200px){
     .navbar ul{
         width: 100%;
@@ -92,6 +163,16 @@ nav h1 {
         left: 0;
         text-align: center;
         display: block;
+    }
+
+    #carouselIndicators {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #carouselIndicators p{
+        display: none;
     }
 
     .carousel-caption {
@@ -117,7 +198,7 @@ nav h1 {
     }
 
     .rounded-circle {
-        background-color: blueviolet;
+        background-color: #ffffff;
     }
 
     .beneficts > li::before {
@@ -131,6 +212,10 @@ nav h1 {
         margin-right: 5px;
         background-position: center center;
         vertical-align: middle;
+    }
+
+    .financiamento {
+        display: none;
     }
 
     .nav-link img {
