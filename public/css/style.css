@@ -68,21 +68,21 @@ nav h1 {
     background-color: #960064;
     color: #ffffff;
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+
 }
+
 
 .social-media-banner li {
     list-style-type: none;
     display: inline;
-
 }
 
 .social-media-banner img{
     background-color: #ffffff;
     border: 3px solid #ffffff;
     border-radius: 40px;
-    margin-left: 20%;
-    margin-right: 10%;
     box-shadow: 10px 10px #660044;
 }
 
@@ -92,6 +92,12 @@ nav h1 {
     bottom: 5px;
     cursor: pointer;
     z-index: 999;
+}
+
+footer p{
+    color: #ffffff;
+    background-color: #660044;
+    margin-bottom: 0px;
 }
 
 
@@ -159,21 +165,26 @@ nav h1 {
         display: none;
     }
 
-    .nav-link img {
-        width: 55px;
-        height: 55px;
-    }
-
     .social-media-banner {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
+    .social-media-banner h4{
+       font-size: 20px;
+    }
+
     .social-media-banner img {
-        width: 50px;
-        height: 50px;
-        margin-left: 13%;
-        margin-right: 15%;
+        width: 30px;
+        height: 30px;
         border-radius: 20px;
+    }
+
+    .social-media-banner ul {
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
